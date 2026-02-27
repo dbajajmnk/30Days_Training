@@ -61,5 +61,15 @@ z = x+y
 
 print(z)
 
+#### Immutability and Mutability #####
+
+names = (1,2,3,4)
+print(names)
+names = ["A","B","C","D"]
+print(names)
+names.append(True)
+print(names)
+
+
 
 
