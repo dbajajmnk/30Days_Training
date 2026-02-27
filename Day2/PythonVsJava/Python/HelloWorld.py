@@ -70,6 +70,61 @@ print(names)
 names.append(True)
 print(names)
 
+###### Cosntrol Structures ######
+
+
+### Looping ###
+for i in range(10):
+    print(i)
+
+a =1 
+while(a<10):
+    print(a)
+    a+=1
+
+### Conditional ###
+'''
+if 
+if else
+if elif
+
+'''
+### Switch ###
+if x>y :
+    print("X is Grater",x)
+else:
+    print("Y is Greater")
+
+if x>y :
+    if x>z:
+        print("X is Grater",x)
+    else:
+        print("Z is Greater",z)
+else:
+     if y>z:
+        print("X is Grater",y)
+     else:
+        print("Z is Greater",z)
+   
+
+marks = 90
+
+if marks>90:
+    print("Excellent")
+elif marks>80:
+    print("First Devision")
+else:
+    print("Sorry!","Need to Attempt Again")
+
+
+
+switch marks:
+    
+
+### Jumping ###
+
+
+
 
 
 
