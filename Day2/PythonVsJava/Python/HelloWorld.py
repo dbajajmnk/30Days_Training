@@ -117,9 +117,15 @@ else:
     print("Sorry!","Need to Attempt Again")
 
 
+monthNumber = 1
+match monthNumber:
+    case 1: 
+        print("Janunary")
+    case 2:
+        print("February")
+    case 3:
+         print("March")
 
-switch marks:
-    
 
 ### Jumping ###
 
