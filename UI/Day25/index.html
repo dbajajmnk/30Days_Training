@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frontend Security Demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Frontend Security Demo</h1>
+
+<h3>XSS Example</h3>
+<input id="input" placeholder="Enter text">
+<button onclick="unsafe()">Unsafe Render</button>
+<button onclick="safe()">Safe Render</button>
+
+<h3>CSRF Simulation</h3>
+<button onclick="csrf()">Simulate CSRF Attack</button>
+
+<h3>CORS Simulation</h3>
+<button onclick="cors()">Simulate CORS Request</button>
+
+<div id="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
