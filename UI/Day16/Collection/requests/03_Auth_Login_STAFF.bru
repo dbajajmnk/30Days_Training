@@ -1,0 +1,25 @@
+meta {
+  name: Auth Login (STAFF)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/auth/login
+  body: json
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "email": "{{staffEmail}}",
+    "password": "{{staffPassword}}"
+  }
+}
+
+assert {
+  status: 200
+}

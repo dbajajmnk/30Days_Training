@@ -1,0 +1,28 @@
+meta {
+  name: Users Create (Forbidden for non-admin)
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/users
+  body: json
+}
+
+headers {
+  content-type: application/json
+  authorization: Bearer {{accessToken}}
+}
+
+body:json {
+  {
+    "email": "should.fail@company.com",
+    "role": "CLIENT",
+    "name": "Should Fail"
+  }
+}
+
+# Run this after logging in as STAFF or CLIENT and setting accessToken.
+assert {
+  status: 403
+}

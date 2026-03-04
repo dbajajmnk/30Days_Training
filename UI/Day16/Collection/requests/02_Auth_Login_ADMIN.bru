@@ -1,0 +1,26 @@
+meta {
+  name: Auth Login (ADMIN)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/auth/login
+  body: json
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "email": "{{adminEmail}}",
+    "password": "{{adminPassword}}"
+  }
+}
+
+# Copy response.accessToken into env var `accessToken`.
+assert {
+  status: 200
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Auth Me
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/auth/me
+  body: none
+  auth: none
+}
+
+headers {
+  authorization: Bearer {{accessToken}}
+}
+
+vars:pre-request {
+  accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1MyIsImVtYWlsIjoiY2xpZW50QGdtYWlsLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3NzI1OTUxNDksImV4cCI6MTc3MjU5Njk0OX0.YYjvcs56gXd7o0G57Opqf4JbBMEcJanamXwvTBkYXy0
+}
+
+assert {
+  status: 200
+}

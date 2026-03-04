@@ -1,0 +1,45 @@
+{
+  "name": "local",
+  "variables": [
+    {
+      "name": "baseUrl",
+      "value": "http://localhost:8080",
+      "enabled": true
+    },
+    {
+      "name": "adminEmail",
+      "value": "admin@company.com",
+      "enabled": true
+    },
+    {
+      "name": "adminPassword",
+      "value": "Admin@1234",
+      "enabled": true
+    },
+    {
+      "name": "staffEmail",
+      "value": "staff@company.com",
+      "enabled": true
+    },
+    {
+      "name": "staffPassword",
+      "value": "Staff@1234",
+      "enabled": true
+    },
+    {
+      "name": "clientEmail",
+      "value": "client@gmail.com",
+      "enabled": true
+    },
+    {
+      "name": "clientPassword",
+      "value": "Client@1234",
+      "enabled": true
+    },
+    {
+      "name": "accessToken",
+      "value": "",
+      "enabled": true
+    }
+  ]
+}

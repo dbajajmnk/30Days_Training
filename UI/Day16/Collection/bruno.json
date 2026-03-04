@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Enterprise Frontend Module - BFF API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Users Create (ADMIN only)
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/users
+  body: json
+}
+
+headers {
+  content-type: application/json
+  authorization: Bearer {{accessToken}}
+}
+
+body:json {
+  {
+    "email": "new.user+bruno@company.com",
+    "role": "STAFF",
+    "name": "Bruno Created User"
+  }
+}
+
+assert {
+  status: 201
+}

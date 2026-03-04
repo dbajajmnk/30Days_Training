@@ -1,0 +1,17 @@
+meta {
+  name: Users List
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/users
+}
+
+headers {
+  authorization: Bearer {{accessToken}}
+}
+
+assert {
+  status: 200
+}

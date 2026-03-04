@@ -1,0 +1,25 @@
+meta {
+  name: Auth Login (CLIENT)
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/auth/login
+  body: json
+}
+
+headers {
+  content-type: application/json
+}
+
+body:json {
+  {
+    "email": "{{clientEmail}}",
+    "password": "{{clientPassword}}"
+  }
+}
+
+assert {
+  status: 200
+}

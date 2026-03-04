@@ -1,0 +1,19 @@
+meta {
+  name: Dashboard (BFF Aggregated)
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/dashboard
+  body: none
+  auth: none
+}
+
+headers {
+  authorization: Bearer {{accessToken}}
+}
+
+assert {
+  status: 200
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Health
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/health
+}
+
+headers {
+  x-request-id: bruno-health-001
+}
+
+assert {
+  status: 200
+}
