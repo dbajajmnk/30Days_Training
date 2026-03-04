@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Accessible SaaS Dashboard">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible SaaS Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Enterprise Dashboard</h1>
+</header>
+
+<nav aria-label="Main Navigation">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Users</a></li>
+    <li><a href="#">Settings</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>User Registration</h2>
+    <form>
+      <label for="email">Email</label>
+      <input id="email" type="email" required aria-describedby="emailError">
+      <span id="emailError" role="alert">Enter a valid email.</span>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Analytics Widget</h2>
+    <article>
+      <p>Active Users: 120</p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Enterprise Corp</p>
+</footer>
+
+</body>
+</html>
